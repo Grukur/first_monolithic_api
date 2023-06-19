@@ -111,7 +111,6 @@
     // capturamos todos los botones para ver Detalles
     for (let i = 0; i < detailBtn.length; i++) {
         detailBtn[i].addEventListener("click", (event) => {
-            console.log('hola detalle')
 
             let path = event.srcElement.offsetParent.nextSibling.parentElement.cells
             let id = path[0].innerText;

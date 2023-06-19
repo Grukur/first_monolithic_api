@@ -1,10 +1,11 @@
-<h1 class="text-center my-3 text-light">El anime que buscaste:</h1>
+<div class="">
+    <h1 class="text-center py-3 text-light">El anime que buscaste:</h1>
+</div>
 
 {{#if target}}
-    {{>tableID 
-        data=target     
-    }}
+{{>tableID
+data=target
+}}
 {{else}}
-    <h2 class="text-center my-3 text-light">No existe id para mostrar.</h2>
-{{/if}} 
-
+<h2 class="text-center my-3 text-light">No existe id para mostrar.</h2>
+{{/if}}
