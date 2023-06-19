@@ -8,7 +8,7 @@
     "test": "mocha",
     "dev": "nodemon index.js",
     "start": "nodemon index.js",
-    "build": "npm install && npm run build",
+    "build": "babel app.js controllers/ index.js test/ -d dist --ignore node_modules",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -24,6 +24,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "chai": "^4.3.7",
     "gh-pages": "^5.0.0",
     "mocha": "^10.2.0"
@@ -34,4 +35,3 @@
   "keywords": [],
   "repository": "https://github.com/Grukur/first_monolithic_api"
 }
-
