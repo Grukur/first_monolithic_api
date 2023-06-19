@@ -8,7 +8,9 @@
     "test": "mocha",
     "dev": "nodemon index.js",
     "start": "nodemon index.js",
-    "build": "npm install && npm run build"
+    "build": "npm install && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Darold K. Trench",
   "license": "ISC",
